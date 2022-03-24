@@ -1,0 +1,153 @@
+body {
+  background-color: #FAF9F9;
+}
+
+.signinup {
+  text-align: center;
+}
+
+.signinup a {
+  display: inline-block;
+  width: 180px;
+  border-bottom: 2px solid #E0E0E0;
+  color: #1D2123;
+  padding: 20px 0;
+  margin: 40px 0;
+  text-decoration: none;
+}
+
+.signinup .active {
+  border-color: #ed008c;
+  color: #ed008c;
+}
+
+nav {
+  background-color: #1D2123;
+}
+
+.navbar-nav {
+  width: 100%;
+  font-size: 14px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.form .signup {
+  text-align: center;
+}
+
+.form input, .form .form-select {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  width: 300px;
+  height: 48px;
+}
+
+.form .phone {
+  width: 300px;
+  height: 48px;
+}
+
+.form .buttons .first {
+  background-color: #3B5797;
+  border: 1px solid #3B5797;
+  margin-left: 0;
+}
+
+.form .buttons .second {
+  background-color: #DD4D39;
+  border: 1px solid #DD4D39;
+}
+
+.form .buttons img {
+  margin: 5px 5px 5px 5px;
+}
+
+.form .buttons button {
+  border-radius: 8px;
+  margin: 15px 5px;
+}
+
+.form .buttons p {
+  color: #828282;
+}
+
+.form .submit {
+  margin: auto;
+}
+
+.form .submit .btn {
+  background-color: #1D2123;
+  padding: 15px 0;
+  width: 300px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.form .submit p {
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+}
+
+.form .submit p a {
+  color: #2D9CDB;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #header {
+    padding-right: 0;
+  }
+  .signinup {
+    width: 100%;
+  }
+  .signinup a {
+    width: 45%;
+  }
+  .form {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 45px;
+  }
+  .form .submit .btn.btn-primary {
+    width: 100%;
+  }
+  .form .mb-3 {
+    width: 100% !important;
+  }
+  .form .mb-3 .input {
+    width: 100%;
+  }
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .buttons > * {
+    font-size: 14px;
+  }
+  .buttons p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

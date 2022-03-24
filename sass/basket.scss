@@ -1,0 +1,128 @@
+@import "./_variable.scss";
+@import "./_mixin.scss";
+body{
+  background:#F2F2F2;
+  box-sizing: border-box;
+
+}
+.count{
+  display: flex;
+  align-items:center;
+}
+.headcontent{
+display: flex;
+justify-content: space-between;
+padding-right: 25px;
+margin: 20px 0;
+}
+.product{
+  display: flex;
+  align-items:center;
+  background:white;
+  height: 120px;
+  width: 904px;
+  font-size: 14px;
+  border:0;
+line-height: 16px;
+margin-bottom: 16px;
+padding-right: 20px;
+  .details{
+    display: inline-block;
+    font-size: 12px;
+    
+  }
+ 
+  input{
+    width: 24px;
+    height: 24px;
+    margin: auto 24px auto 16px;
+  }
+  .productdetail{
+    margin:25px 80px 18px 34px;
+  }
+  .count>*{
+    margin-right: 24px;
+  }
+  .delete{
+    margin-left: 110px;
+  }
+}
+.price{
+  color:$primary-pink;
+  font-size: 16px;
+}
+.basketcontent{
+
+  background:white;
+  width: 280px;
+  height: 543px;
+  padding: 24px;
+ 
+ .basketcolumn{
+   margin-bottom: 12px;
+   display: flex;
+   justify-content: space-between;
+  
+ }
+ input{
+   width: 100%;
+   margin: 40px 0;
+   background:#f2f2f2;
+   border:0;
+   height:40px ;
+   border-radius: 8px;
+
+ }
+ button{
+  border-radius: 8px;
+  height:50px ;
+  width: 100%;
+ }
+ .total{
+   
+   border-top:solid black 1px;
+   padding-top: 24px;
+ }
+}
+footer{
+  margin-top: 124px;
+}
+.gray{
+  color:#828282;
+}
+@include mobile{
+  footer{
+    display: none; 
+  }
+  .headcontent{
+    button{
+      display: none;
+    }
+  }
+  .product{
+    width:100%;
+
+    input{
+      width: 24px!important;
+      margin: 64px 12px 64px 16px;
+    }
+    >img{
+      height: 66px;
+      width: 56px;
+    }
+    .productdetail{
+      width: 192px;
+      margin: 0;
+    }
+  }
+ .count{
+   width: 100%;
+ }
+ .basketcontent{
+   width: 100%;
+ }
+}
+
+  
+ 
+  

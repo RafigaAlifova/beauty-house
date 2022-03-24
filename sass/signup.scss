@@ -1,0 +1,142 @@
+//dəyişənlər
+@import "./_variable.scss";
+@import '../sass/mixin';
+
+body {
+  background-color: $body;
+}
+
+
+//nav form arası
+.signinup{
+text-align: center;
+a{
+  display: inline-block;
+  width: 180px;
+  border-bottom:2px solid $signin;
+  color:$nav-color;
+  padding: 20px 0;
+  margin: 40px 0 ;
+  text-decoration: none;
+}
+.active{
+  border-color: $primary-pink;
+  color:$primary-pink;
+}
+}
+//navbar
+nav{
+  background-color:$nav-color;
+
+}
+.navbar-nav {
+  width: 100%;
+  font-size: 14px;
+  justify-content: space-evenly;
+}
+//form
+.form {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 8px;
+
+  .signup {
+    text-align: center;
+  }
+  input, .form-select {
+    background-color: $input;
+    border: 1px solid $input;
+    width: 300px;
+    height: 48px;
+    
+  }
+  .phone{
+    width: 300px;
+    height: 48px;
+  }
+  .buttons {
+    .first {
+      background-color: $facebook;
+      border: 1px solid $facebook;
+      margin-left: 0;
+    }
+    .second {
+      background-color: $google;
+      border: 1px solid $google;
+    }
+    img {
+      margin: 5px 5px 5px 5px;
+    }
+    button {
+      border-radius: 8px;
+      margin: 15px 5px;
+    }
+    p {
+      color: $p;
+    }
+  }
+  .submit {
+    margin: auto;
+    .btn {
+      background-color: $nav-color;
+      padding: 15px 0;
+      width: 300px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin: 30px 0;
+    }
+    p{
+      font-size: 12px;
+      text-align: center;
+      width: 200px;
+      margin: auto;
+      a{
+        color:$blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width:768px){
+  #header{
+    padding-right: 0;
+  }
+  .signinup{
+    width: 100%;
+    a{
+      width: 45%;
+    }
+  }
+  .form{
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 45px;
+   .submit{
+    .btn.btn-primary{
+      width: 100%;
+    }
+   }
+    .mb-3{
+     width: 100% !important;
+     .input{
+       width: 100%;
+     }
+    }
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    >*{
+      font-size: 14px;
+    }
+    p{
+      display: none;
+    }
+  }
+}
+
+//media query sass baxx!!!

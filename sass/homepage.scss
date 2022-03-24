@@ -1,0 +1,192 @@
+@import "_variable.scss";
+@import "_mixin.scss";
+
+body {
+  background: #f3f3f3a4;
+}
+.mobile{
+  display: none;
+}
+.carousel {
+  height: 540px;
+}
+.container-fluid.c{
+  position: relative;
+}
+.carousel-indicators{
+  position: relative;
+  button{
+    width: 8px!important;
+    height: 8px!important;
+    border-radius:50%;
+  }
+}
+.img.mobile {
+  width: 100%;
+}
+.cards {
+  flex-wrap: nowrap;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+  .col {
+    width: 296px;
+  }
+  .card {
+    border: 0;
+    width: 272px;
+    margin-bottom: 20px;
+    .card-img {
+      position: relative;
+      width: 270px;
+      height: 276px;
+
+      .card-img-top {
+        height: 276px;
+      }
+    }
+    .card-text {
+      height: 40px;
+    }
+    .fav {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 40px;
+    }
+    .price {
+      color: $primary-pink;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    &:hover {
+      box-shadow: 2px 10px 20px 5px rgba(0, 0, 0, 0.08);
+    }
+  
+}
+}
+.cards::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.cardheader {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  h6 {
+    font-size: 24px;
+  }
+  a {
+    text-decoration: none;
+    color: #1d2123;
+  }
+}
+.extra {
+  margin: 50px auto 70px auto;
+  justify-content: space-between;
+  display: flex;
+  img {
+    width: 100%;
+  }
+}
+.cardcontainer {
+  width: 100%;
+}
+.signin {
+  text-align: center;
+  background-color: #F0F0F0    ;
+  padding-bottom: 56px;
+
+  p {
+    padding: 30px 0;
+  }
+  .email {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  input {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    width: 384px;
+    height: 48px;
+    margin-right: 8px;
+  }
+  button {
+    background: #1d2123;
+    border-radius: 8px;
+    height: 48px;
+    width: 128px;
+  }
+ 
+}
+@include mobile {
+  .mobile{
+    >div{
+      display: inline-block;
+      margin-right: 16px;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      
+    }
+   
+  }
+  .status{
+    display: flex;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+      
+      overflow-x: hidden;
+  }
+  .status::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  .container {
+    padding: 0;
+  }
+  #carouselExampleIndicators {
+    height: 200px;
+  }
+  .card {
+    width: 216px;
+    
+    .card-img {
+      width: 215px;
+      height: 218px;
+      .card-img-top {
+        height: 218px;
+      }
+    }
+    .card-text {
+      height: 40px;
+  }
+}
+  .cardheader {
+    a {
+      display: none;
+    }
+  }
+
+
+  .logos{
+      display: none !important;
+  }
+  .email{
+    input{
+      width: 250px;
+    }
+  }
+  .extra{
+    flex-direction: column;
+    img{
+      margin-bottom: 24px;
+    }
+  }
+}
+
+
+.owl-nav{
+  display: none;
+}
