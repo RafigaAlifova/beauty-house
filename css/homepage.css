@@ -29,7 +29,7 @@ body {
 }
 
 .cards {
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -ms-overflow-style: none;
   /* for Internet Explorer, Edge */
   scrollbar-width: none;
@@ -75,7 +75,7 @@ body {
 }
 
 .cards .card:hover {
-          box-shadow: 2px 10px 20px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 10px 20px 5px rgba(0, 0, 0, 0.08);
 }
 
 .cards::-webkit-scrollbar {
@@ -86,7 +86,7 @@ body {
 .cardheader {
   margin: 20px auto;
   display: flex;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .cardheader h6 {
@@ -100,7 +100,7 @@ body {
 
 .extra {
   margin: 50px auto 70px auto;
-          justify-content: space-between;
+  justify-content: space-between;
   display: flex;
 }
 
@@ -124,8 +124,8 @@ body {
 
 .signin .email {
   display: flex;
-          justify-content: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .signin input {
@@ -145,58 +145,66 @@ body {
 }
 
 @media (max-width: 768px) {
-  .mobile > div {
+  .mobile>div {
     display: inline-block;
     margin-right: 16px;
     margin-top: 24px;
     margin-bottom: 32px;
   }
+
   .status {
     display: flex;
-   
-        flex-wrap: nowrap;
-  
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
+
+    flex-wrap: nowrap;
     overflow-y: scroll;
     overflow-x: hidden;
   }
+
   .status::-webkit-scrollbar {
     display: none;
-    /* for Chrome, Safari, and Opera */
   }
+
   .container {
     padding: 0;
   }
+
   #carouselExampleIndicators {
     height: 200px;
   }
+
   .card {
     width: 216px;
   }
+
   .card .card-img {
     width: 215px;
     height: 218px;
   }
+
   .card .card-img .card-img-top {
     height: 218px;
   }
+
   .card .card-text {
     height: 40px;
   }
+
   .cardheader a {
     display: none;
   }
+
   .logos {
     display: none !important;
   }
+
   .email input {
     width: 250px;
   }
+
   .extra {
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .extra img {
     margin-bottom: 24px;
   }
@@ -205,4 +213,5 @@ body {
 .owl-nav {
   display: none;
 }
+
 /*# sourceMappingURL=homepage.css.map */
