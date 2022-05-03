@@ -27,7 +27,7 @@ nav {
 
 .navbar-nav {
   width: 100%;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .form {
@@ -41,7 +41,8 @@ nav {
   text-align: center;
 }
 
-.form input, .form .form-select {
+.form input,
+.form .form-select {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   width: 300px;
@@ -106,41 +107,51 @@ nav {
   #header {
     padding-right: 0;
   }
+
   .signinup {
     width: 100%;
   }
+
   .signinup a {
     width: 45%;
   }
+
   .form {
     width: 100%;
     padding: 30px;
     margin-bottom: 45px;
   }
+
   .form .submit .btn.btn-primary {
     width: 100%;
   }
+
   .form .mb-3 {
     width: 100% !important;
   }
+
   .form .mb-3 .input {
     width: 100%;
   }
+
   .buttons {
-  
+
     display: flex;
 
-            flex-direction: row;
+    flex-direction: row;
 
-            justify-content: space-between;
- 
-        flex-wrap: nowrap;
+    justify-content: space-between;
+
+    flex-flow: nowrap;
   }
-  .buttons > * {
+
+  .buttons>* {
     font-size: 14px;
   }
+
   .buttons p {
     display: none;
   }
 }
+
 /*# sourceMappingURL=signup.css.map */
