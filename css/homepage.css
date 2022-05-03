@@ -29,7 +29,6 @@ body {
 }
 
 .cards {
-  -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-overflow-style: none;
   /* for Internet Explorer, Edge */
